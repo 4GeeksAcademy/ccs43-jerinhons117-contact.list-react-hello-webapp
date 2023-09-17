@@ -10,10 +10,13 @@ export const Home = () => {
   // const [title, setTitle] = useState(false)
   return (
     <div className="">
-      <div>
+      {/* <div>
         <h1>Para crear un nuevo contacto haga click en New Contact</h1>
-      </div>    
-      {store.contactList.map((contact) => {
+      </div>   */}
+      {
+        store.contactList.length == 0 && <h1 className=" title text-light d-flex justify-content-center">Para crear un nuevo contacto haga click en New Contact</h1>
+      }   
+      { store.contactList.length != 0 && store.contactList.map((contact) => {
         // {title ? <h1>para crear un nuevo contacto haga click en New Contact</h1> : contactList}
       //   if (store.contactList == 0){
       //     return <h1>para crear un nuevo contacto haga click en New Contact</h1>

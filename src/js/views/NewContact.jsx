@@ -35,19 +35,19 @@ const NewContact = () => {
         <div className="container w-100">
             <form className="d-flex flex-column justify-content-center align-items-center" onSubmit={addNewContact}>
                 <div className="mb-3 col-6">
-                    <label htmlFor="InputFullName" className="form-label">Full Name</label>
+                    <label htmlFor="InputFullName" className="form-label text-secondary" placeholder="NAME">Full Name</label>
                     <input type="text" className="form-control" id="InputFullName" name="full_name" value={contact.full_name} onChange={(event) => handleContact(event)} />
                 </div>
                 <div className="mb-3 col-6">
-                    <label htmlFor="InputEmail" className="form-label">Email address</label>
+                    <label htmlFor="InputEmail" className="form-label text-secondary" placeholder="EMAIL">Email address</label>
                     <input type="email" className="form-control" id="InputEmail" aria-describedby="emailHelp" name="email" value={contact.email} onChange={(event) => handleContact(event)} />
                 </div>
                 <div className="mb-3 col-6">
-                    <label htmlFor="PhoneNumber" className="form-label">Phone Number</label>
+                    <label htmlFor="PhoneNumber" className="form-label text-secondary" placeholder="PHONE">Phone Number</label>
                     <input type="text" className="form-control" id="PhoneNumber" name="phone" value={contact.phone} onChange={(event) => handleContact(event)} />
                 </div>
                 <div className="mb-3 col-6">
-                    <label htmlFor="InputAddress" className="form-label">Address</label>
+                    <label htmlFor="InputAddress" className="form-label text-secondary" placeholder="ADDRESS">Address</label>
                     <input type="text" className="form-control" id="InputAddress" name="address" value={contact.address} onChange={(event) => handleContact(event)} />
                 </div>
                 <button type="submit" className="btn btn-primary col-6">Save</button>
